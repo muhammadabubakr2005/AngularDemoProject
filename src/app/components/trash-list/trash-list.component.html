@@ -1,0 +1,33 @@
+<!-- <div *ngIf="!user">
+    <a routerLink="/login">Login</a>
+</div> -->
+<app-header [userRole]="user?.role || ''"></app-header>
+<table border="1" cellpadding="10">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+    </tr>
+    </thead>
+    <tbody *ngIf="users.length > 0; else noUsers">
+    <tr *ngFor="let user of users">
+        <ng-container *ngIf="user.isDeleted === true" class="admin-badge">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.role }}</td>
+            <td>
+            <button (click)="viewUser(user)">View</button>
+            </td>
+        </ng-container>
+
+    </tr>
+    </tbody>
+</table>
+
+<ng-template #noUsers>
+    <p>No users found.</p>
+</ng-template>
+
