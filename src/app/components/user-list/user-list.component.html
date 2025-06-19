@@ -28,13 +28,10 @@
             <td>{{ user.email }}</td>
             <td>{{ user.role }}</td>
             <td>
-            <div *ngIf="currentUser?.role === 'admin'">
+            <div>
                 <button (click)="viewUser(user)">View</button>
-                <button (click)="editUser(user)">Edit</button>
-                <button (click)="deleteUser(user)">Delete</button>
-            </div>
-            <div *ngIf="currentUser?.role === 'user'">
-                <button (click)="viewUser(user)">View</button>
+                <button [ngClass]="{'disabled-btn': currentUser?.id !== user.id && currentUser?.role === 'user'}" (click)="editUser(user)">Edit</button>
+                <button [ngClass]="{'disabled-btn': currentUser?.id !== user.id && currentUser?.role != 'admin'}" (click)="deleteUser(user)">Delete</button>
             </div>
             </td>
         </ng-container>

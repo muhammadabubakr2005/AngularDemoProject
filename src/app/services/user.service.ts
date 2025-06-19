@@ -38,8 +38,6 @@ export class UserService {
         users.filter(user =>
           !user.isDeleted && (
             user.name.toLowerCase().includes(query.toLowerCase()) 
-            // user.email.toLowerCase().includes(query.toLowerCase()) ||
-            // user.skills.some(skill => skill.toLowerCase().includes(query.toLowerCase()))
           )
         )
       )

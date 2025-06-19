@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+.disabled-btn {
+    pointer-events: none;       /* disables hover and click */
+    cursor: not-allowed;        /* shows disabled cursor */
+    opacity: 0.6;               /* makes it look visually disabled */
+    background-color: #ccc;
+}

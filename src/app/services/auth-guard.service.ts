@@ -19,11 +19,9 @@ export const loginGuard: CanActivateFn = () => {
   const router = inject(Router);
 
   const user = authService.getUser();
-  if (user) {
-    debugger
+  if (user) {    
     return router.createUrlTree(['/home']);
   } else {
-    debugger
     return true;
   }
 };

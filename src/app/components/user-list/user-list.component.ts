@@ -43,7 +43,7 @@ export class UserListComponent {
   }
   deleteUser(user: User) {
     user.isDeleted = true; 
-    this.userService.updateUser(user.id,user).subscribe({
+    this.userService.updateUser(user.id, user).subscribe({
       next: () => {
         console.log('User deleted:', user.id);
         this.loadUsers();
