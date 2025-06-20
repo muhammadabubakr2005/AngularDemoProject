@@ -19,7 +19,7 @@
       "email": "hammad@gmail.com",
       "password": "123456",
       "role": "user",
-      "isDeleted": true,
+      "isDeleted": false,
       "skills": [
         "Web Development",
         "App Development",
@@ -32,7 +32,7 @@
       "email": "mohsin@gmail.com",
       "password": "123456",
       "role": "user",
-      "isDeleted": true,
+      "isDeleted": false,
       "skills": [
         "MERN full stack developer",
         "sleeping"
@@ -40,11 +40,11 @@
     },
     {
       "id": "4",
-      "name": "Mohsin",
-      "email": "mohsin@gmail.com",
+      "name": "Anum",
+      "email": "anum@gmail.com",
       "password": "123456",
       "role": "user",
-      "isDeleted": true,
+      "isDeleted": false,
       "skills": [
         "MERN full stack developer",
         "sleeping"
@@ -81,7 +81,7 @@
       "email": "fatima@gmail.com",
       "password": "123456",
       "role": "user",
-      "isDeleted": true,
+      "isDeleted": false,
       "skills": [
         "Machine Learning",
         "AI Research"
@@ -129,7 +129,7 @@
       "email": "noor@gmail.com",
       "password": "123456",
       "role": "user",
-      "isDeleted": true,
+      "isDeleted": false,
       "skills": [
         "DevOps",
         "AWS"
@@ -203,6 +203,53 @@
       "isDeleted": false,
       "skills": [
         "Web Development"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Saviza",
+      "email": "saviza@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Web Development",
+        "Mern Stack"
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Wareesha",
+      "email": "wareesha@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "C++",
+        "python"
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Qadeer",
+      "email": "qadeer@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Physician",
+        "IBTS"
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Alina",
+      "email": "alina@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Psychiatrist "
       ]
     }
   ]
