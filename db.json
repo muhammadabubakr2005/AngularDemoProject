@@ -1,0 +1,256 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Abubakar",
+      "email": "abubakr@gmail.com",
+      "password": "123456",
+      "role": "admin",
+      "isDeleted": false,
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Hammad",
+      "email": "hammad@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Web Development",
+        "App Development",
+        "Cloud Services"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Mohsin",
+      "email": "mohsin@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "MERN full stack developer",
+        "sleeping"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Anum",
+      "email": "anum@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "MERN full stack developer",
+        "sleeping"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Ayesha",
+      "email": "ayesha@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "UI/UX Design",
+        "Graphic Design"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Usman",
+      "email": "usman@gmail.com",
+      "password": "123456",
+      "role": "admin",
+      "isDeleted": false,
+      "skills": [
+        "Python",
+        "Django",
+        "Data Analysis"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Fatima",
+      "email": "fatima@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Machine Learning",
+        "AI Research"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Ali",
+      "email": "ali@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Java",
+        "Spring Boot"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Zainab",
+      "email": "zainab@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Flutter",
+        "Firebase"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Bilal",
+      "email": "bilal@gmail.com",
+      "password": "123456",
+      "role": "admin",
+      "isDeleted": false,
+      "skills": [
+        "Cybersecurity",
+        "Ethical Hacking"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Noor",
+      "email": "noor@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "DevOps",
+        "AWS"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Tariq",
+      "email": "tariq@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "PHP",
+        "Laravel"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Iqra",
+      "email": "iqra@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "React Native",
+        "Mobile Development"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Hamza",
+      "email": "hamza@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "C++",
+        "Data Structures"
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Hafsa",
+      "email": "hafsa@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Content Writing"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Tabarak",
+      "email": "tabarak@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Mechanical Engineer",
+        "Safety certification"
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Fatim",
+      "email": "fatim@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Web Development"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Saviza",
+      "email": "saviza@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Web Development",
+        "Mern Stack"
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Wareesha",
+      "email": "wareesha@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "C++",
+        "python"
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Qadeer",
+      "email": "qadeer@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Physician",
+        "IBTS"
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Alina",
+      "email": "alina@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "isDeleted": false,
+      "skills": [
+        "Psychiatrist "
+      ]
+    }
+  ]
+}

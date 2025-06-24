@@ -1,0 +1,17 @@
+<header class="main-header">
+    <h1>Advanced User Management Panel</h1>
+    <div *ngIf="UserRole === 'admin'" class="admin-badge">
+        <nav class="nav-links">
+            <a routerLink="/home">Home</a>
+            <a routerLink="/add-user">Add Users</a>
+            <a routerLink="/users">Users List</a>
+            <a routerLink="/trash">Trash</a>
+        </nav>
+    </div>
+    <div *ngIf="UserRole === 'user'" class="user-badge">
+        <nav class="nav-links">
+            <a routerLink="/home">Home</a>
+            <a routerLink="/users">Users List</a>
+        </nav>
+    </div>
+</header>

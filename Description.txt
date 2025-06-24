@@ -1,0 +1,68 @@
+Advanced User Management Panel
+Project Overview
+This Angular-based project is an User Management Panel with functionalities to manage user data through a clean interface. It features role-based access control for two types of users: Admin and User (Viewer).
+User Roles
+	1)Admin: Can perform all CRUD operations, including:
+	-Add new users
+	-Edit any user’s information
+	-Soft delete any user
+	-View all users
+	-View Trash list and restore users
+	2)User (Viewer):
+	-Can view all users
+	-Can view and edit their own account
+	-Can delete their own account
+Components
+	1)Add User:
+	-Reactive form with validations
+	-Fields: name, email, role, password, and skills (array)
+	2)Edit User:
+	-Edit all attributes added in Add User
+	3)View User List:
+	-Paginated table displaying id, name, email
+	-Actions: View, Edit, Delete against each user.
+	4)View User:
+	-Detailed view of a single user's information
+	5)View Trash List:
+	-Displays soft-deleted users in same table format
+	-Only "View" button available
+	6)Home:
+	-Displays information of the logged-in user
+	7)Login Page:
+	-Reactive form for user login
+User Interface Features
+	1)Paginated table for listing users with search and filter functionality
+	2)Form validations enforced with appropriate error messages
+User Interface Technology
+	Angular framework
+Backend
+	1)Connected to a mock backend using json-server
+	2)Full CRUD operations supported
+User Interface
+Each user object includes:
+	-id
+	-name
+	-email
+	-password
+	-isDeleted (flag for soft deletion)
+	-role (admin/user)
+	-skills (array)
+Services
+	1)Auth Guard:
+	-Protects routes from unauthenticated users
+	-Guards access to the application and login page
+	2)Auth Service:
+	-Handles login functionality
+	-Stores the logged-in user’s data in local storage
+	3)User Service:
+	Handles all user operations:
+	-Login
+	-Add
+	-Update
+	-Delete
+	-Get largest user ID
+Routing
+•	<router-outlet> used in app.component.html to enable routing between components
+Database
+•	db.json created inside the project to simulate backend data storage
+

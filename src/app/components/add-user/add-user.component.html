@@ -1,0 +1,74 @@
+<!-- <div *ngIf="!currentUser">
+    <a routerLink="/login">Login</a>
+</div> -->
+
+
+<app-header [userRole]="currentUser?.role || ''"></app-header>
+
+<form [formGroup]="addUserForm" (ngSubmit)="onSubmit()">
+    <label>
+        Name:
+        <input type="text" formControlName="name" required />
+    </label>
+    <div *ngIf="addUserForm.invalid && addUserForm.controls.name?.touched" style="color:red">
+        <div *ngIf="addUserForm.controls.name?.errors?.['required']">
+            Name is required
+        </div>
+        <div *ngIf="addUserForm.controls.name?.errors?.['minlength']">
+            Name must be at least 4 characters long
+        </div>
+    </div>
+
+    <br />
+
+    <label>
+        Email:
+        <input type="email" formControlName="email" required email />
+    </label>
+    <div *ngIf="addUserForm.invalid && addUserForm.controls.email?.touched" style="color:red">
+        <div *ngIf="addUserForm.controls.email?.errors?.['required']">
+            Email is required
+        </div>
+        <div *ngIf="addUserForm.controls.email?.errors?.['email']">
+            Invalid email format
+        </div>
+    </div>
+
+    <br />
+
+    <label>
+        Password:
+        <input type="text" formControlName="password" required minlength="6" />
+    </label>
+    <div *ngIf="addUserForm.invalid && addUserForm.controls.password?.touched" style="color:red">
+        <div *ngIf="addUserForm.controls.password?.errors?.['required']">
+            Password is required
+        </div>
+        <div *ngIf="addUserForm.controls.password?.errors?.['minlength']">
+            Password must be at least 6 characters long
+        </div>
+    </div>
+
+    <br />
+    <label>
+        Role:
+        <select formControlName="role" required>
+            <option value="user">Viewer</option>
+            <option value="admin">Admin</option>
+        </select>
+        <div *ngIf="addUserForm.controls.role?.invalid && addUserForm.controls.role?.touched" style="color:red">Role is
+            required</div>
+    </label>
+    <label>
+        <div formArrayName="skills" class="skills-container">
+            Skills:
+            <div *ngFor="let skill of addUserForm.controls.skills.controls; let i = index">
+                <input type="text" [formControlName]="i" />
+            </div>
+            <button type="button" class="add-button" (click)="addSkill()">+</button>
+        </div>
+    </label>
+    <br /><br />
+
+    <button type="submit">Add User</button>
+</form>

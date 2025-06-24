@@ -1,0 +1,56 @@
+<!-- <div *ngIf="!user">
+    <a routerLink="/login">Login</a>
+</div> -->
+<app-header [userRole]="currentUser?.role || ''"></app-header>
+<div class="search-bar">
+    <input type="text" placeholder="Search users..." [(ngModel)]="searchTerm" (keypress)="onSearch(searchTerm)" (keydown)="onSearch(searchTerm)" />
+    <!-- <button >Search</button> -->
+</div>
+<table border="1" cellpadding="10">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody *ngIf="paginatedUsers.length > 0; else noUsers">
+        <tr *ngFor="let user of paginatedUsers">
+            <ng-container *ngIf="user.isDeleted === false" class="admin-badge">
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.role }}</td>
+                <td>
+                    <div>
+                        <button (click)="viewUser(user)">View</button>
+                        <button
+                            [ngClass]="{'disabled-btn': currentUser?.id !== user.id && currentUser?.role === 'user'}"
+                            (click)="editUser(user)">Edit</button>
+                        <button
+                            [ngClass]="{'disabled-btn': currentUser?.id !== user.id && currentUser?.role != 'admin'}"
+                            (click)="deleteUser(user)">Delete</button>
+                    </div>
+                </td>
+            </ng-container>
+
+        </tr>
+        <div class="pagination-controls">
+            <button (click)="goToPage(currentPage - 1)" [disabled]="currentPage === 1"><<</button>
+
+            <ng-container *ngFor="let page of [].constructor(math.ceil(users.length / pageSize)); let i = index">
+                <button (click)="goToPage(i + 1)" [class.active]="currentPage === (i + 1)">
+                    {{ i + 1 }}
+                </button>
+            </ng-container>
+
+            <button (click)="goToPage(currentPage + 1)"
+                [disabled]="currentPage === math.ceil(users.length / pageSize)">>></button>
+        </div>
+    </tbody>
+</table>
+
+<ng-template #noUsers>
+    <p>No users found.</p>
+</ng-template>

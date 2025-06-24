@@ -1,0 +1,18 @@
+<!-- <div *ngIf="!currentUser">
+    <a routerLink="/login">Login</a>
+</div> -->
+<div class="viewContainer">
+    <div class="user-info" *ngIf="user">
+        <h2>User Information</h2>
+        <p><strong>Name:</strong> {{ user.name }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Role:</strong> {{ user.role }}</p>
+        <p><strong>Skills:</strong></p>
+        <ul>
+            <li *ngFor="let skill of user.skills">
+                {{ skill }}
+            </li>
+        </ul>
+    </div>
+
+</div>
